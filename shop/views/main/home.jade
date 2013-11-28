@@ -1,0 +1,17 @@
+extends layout
+block content
+  a(href="#").thumbnail
+    //- img(src="http://placehold.it/930x160", alt="")
+  .island.greybox.greybox--huge
+  hr.rule.rule--ornament(data-attribute="$")
+  h4 Featured
+  ul.thumbnails.grid.grid--center
+      each product in featured
+        li.span3.media__img.push--sides
+          a(href="/product/#{product.seo}").thumbnail.grid
+            img(src="http://placehold.it/210x160", alt="").grid__item
+            h6.grid__item #{product.name}
+              p.pull-right £#{product.pricing.retail}
+block scripts
+  
+  

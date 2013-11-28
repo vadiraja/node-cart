@@ -1,0 +1,13 @@
+Procfile
+/.c9revisions
+/node_modules
+/.git
+.sass-cache/
+/shop/public/css/.sass-cache/
+nodeshop.sublime-project
+nodeshop.sublime-workspace	
+/shop/public/css/inuit.css/.git
+.gitmodules
+/shop/public/.gitmodules
+.sass-cache
+/nodeshop.sublime-workspace

@@ -1,0 +1,14 @@
+{
+    
+    "connection" : "mongodb://test:test@dharma.mongohq.com:10013/nodeshop",
+    "cookie_secret" : "session secret",
+    
+    "store" : {
+        
+        "name" : "Node-e-Shop",
+        "tagline" : "A Node.JS and Express powered E-Commerce System based on NodeShop from Billy Topley",
+        "owner" : "Vadiraja"
+        
+    }
+    
+}

@@ -1,0 +1,14 @@
+extend ../main/layout
+block content
+  h2.flush--bottom #{locals.title}
+  hr.rule.rule--dotted
+  ul.thumbnails.grid.grid--center
+      each product in products
+        li.span3.media__img.push--sides
+          a(href="/product/#{product.seo}").thumbnail
+            img(src="http://placehold.it/210x160", alt="")
+            h6 #{product.name}
+              p.pull-right £#{product.pricing.retail}
+block scripts
+  
+  
