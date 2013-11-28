@@ -1,0 +1,24 @@
+extend ../main/layout
+block content
+    h2.grid #{product.name}
+        hr.rule.rule--dotted
+    .row.grid
+      .span6.grid__item.one-half
+        img(src="http://placehold.it/420x320&text=Main Product Image", alt="")
+      .span6.grid__item.one-half
+        #{product.details.description}
+        hr.rule
+        p Make:  #{product.make}
+        p Model:  #{product.model}
+        hr.rule
+        .grid
+            h3.pull-left.grid__item.one-quarter.push--top £#{product.pricing.retail}
+            .grid__item.three-quarters
+                
+                input.text-input.one-tenth.push(size=3,min="1",type="number",value="1");
+                button(addId='#{product.id}')#add-to-cart-button.btn.btn-primary.btn-large.flush--sides.btn--small.btn--color2.grid__item.three-tenths
+                    span.fa-stack.fa-lg
+                        i.fa.fa-circle.fa-stack-2x.fa-inverse
+                        i.fa.fa-shopping-cart.fa-stack-1x.color5
+                    |&nbsp;
+                    span.one-half Add to cart
