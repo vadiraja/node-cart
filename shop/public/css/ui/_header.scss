@@ -1,0 +1,30 @@
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * LOGO
+*/
+
+
+
+
+
+/*------------------------------------*\
+    $LOGO
+\*------------------------------------*/
+
+header{
+  
+   // padding-bottom: $base-spacing-unit / 2;
+   color:$color1;
+}
+
+.brand{
+   font-size: 32px;
+    @extend .color2;
+}
+
+.greybox--huge {
+
+	min-height: 350px;
+}

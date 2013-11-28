@@ -1,0 +1,59 @@
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * NAV PRIMARY
+ * NAV MOBILE
+*/
+
+
+
+
+/*------------------------------------*\
+    $NAV PRIMARY
+\*------------------------------------*/
+
+.nav a {
+	color:$color2;
+}
+
+.nav--cats {
+	font-weight: bold;
+
+}
+
+.nav--top {
+    // @extend .bg-color5;
+    background-color: $color2--verylight;
+
+
+
+}
+
+.nav--top a{
+    // @extend .bg-color5;
+    text-decoration: none;
+    &:hover{
+        color:red;
+        text-decoration: none;
+    }
+
+}
+
+.nav--cats a {
+	border-right: 1px dotted #eee;
+	text-decoration: none;
+	line-height: $base-line-height / 2; 
+	&:hover{
+        background-color: lighten($color2,50%);
+        color:$color4;
+        text-decoration: none;
+        border-radius: 3px;
+    }
+}
+
+
+
+/*------------------------------------*\
+    $NAV MOBILE
+\*------------------------------------*/
